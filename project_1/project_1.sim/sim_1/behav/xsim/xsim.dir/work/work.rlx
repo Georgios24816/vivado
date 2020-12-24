@@ -1,0 +1,11 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/Georg/Documents/vivado/project_1/project_1.srcs/sources_1/new/DFlipFlop.vhd,1608847192,vhdl,C:/Users/Georg/Documents/vivado/project_1/project_1.srcs/sources_1/new/Register_RE.vhd,,,dflipflop,,,,,,,,
+C:/Users/Georg/Documents/vivado/project_1/project_1.srcs/sources_1/new/FullAdder.vhd,1608716865,vhdl,,,,fulladder_n;test,,,,,,,,
+C:/Users/Georg/Documents/vivado/project_1/project_1.srcs/sources_1/new/Main.vhd,1608848580,vhdl,,,,main,,,,,,,,
+C:/Users/Georg/Documents/vivado/project_1/project_1.srcs/sources_1/new/Register_RE.vhd,1608847246,vhdl,C:/Users/Georg/Documents/vivado/project_1/project_1.srcs/sources_1/new/Main.vhd,,,register_re,,,,,,,,
+C:/WSL/vhdl/FullAdder.vhd,1608846969,vhdl,C:/Users/Georg/Documents/vivado/project_1/project_1.srcs/sources_1/new/Main.vhd,,,fulladder,,,,,,,,
+C:/WSL/vhdl/divTest.vhd,1608752386,vhdl,,,,divtest,,,,,,,,
+C:/WSL/vhdl/divTest_tb.vhd,1608752386,vhdl,,,,divtest_tb,,,,,,,,

@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl work  \
+"../../../../project_1.srcs/sources_1/new/DFlipFlop.vhd" \
+"../../../../../../../../../WSL/vhdl/FullAdder.vhd" \
+"../../../../project_1.srcs/sources_1/new/Register_RE.vhd" \
+"../../../../project_1.srcs/sources_1/new/Main.vhd" \
+
+# Do not sort compile order
+nosort

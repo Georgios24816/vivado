@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl work  \
+"../../../../../../../../../WSL/vhdl/divTest.vhd" \
+"../../../../../../../../../WSL/vhdl/divTest_tb.vhd" \
+
+# Do not sort compile order
+nosort

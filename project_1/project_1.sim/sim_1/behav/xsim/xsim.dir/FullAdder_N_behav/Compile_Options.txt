@@ -1,0 +1,1 @@
+-wto "8363c5a1f64f48b4bb52e71edde6f096" --incr --debug "typical" --relax --mt "2" -L "work" -L "secureip" --snapshot "FullAdder_N_behav" "work.FullAdder_N" -log "elaborate.log" 
