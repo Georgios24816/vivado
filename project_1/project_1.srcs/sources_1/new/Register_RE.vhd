@@ -13,22 +13,27 @@ entity Register_RE is --rising edge
 			a	: in	unsigned(WIDTH - 1 downto 0);
 
 			res : out	unsigned(WIDTH - 1 downto 0)
-		);
-
+		); 
 end Register_RE;
 
 architecture rtl of Register_RE is 
-signal w : std_logic;
-signal r : unsigned(WIDTH - 1 downto 0);
+--signal w : std_logic;
+--signal r : unsigned(WIDTH - 1 downto 0);
 
 begin    
-    w <= '1' when (clk = '1' and wr = '1') else '0';
+    process (clk, wr, a)
+    begin
+        if (rising_edge(clk) and wr = '1') then
+            res <= a;
+        end if;
+    end process;
+--    w <= '1' when (clk = '1' and wr = '1') else '0';
     
-    DFF_GEN_LOOP : for i in 0 to WIDTH - 1 generate
-        DFF : entity work.DFlipFlop
-        port map(w, a(i downto i), r(i downto i));
-    end generate;
+--    DFF_GEN_LOOP : for i in 0 to WIDTH - 1 generate
+--        DFF : entity work.DFlipFlop
+--        port map(w, a(i downto i), r(i downto i));
+--    end generate;
 	
-	res <= r;
+--	res <= r;
 
 end rtl;

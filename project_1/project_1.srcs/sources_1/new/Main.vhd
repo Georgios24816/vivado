@@ -29,58 +29,58 @@ signal AluFlagsOutRegRes : unsigned(1 downto 0);
 signal AluFlagsResRegIn : unsigned(1 downto 0);
 begin
 
-    AluAInReg : entity work.Register_RE
-    generic map (WIDTH => MAIN_WIDTH)
-    port map (
-        clk => clk,
-        wr => wr,
-        a => in1,
+--    AluAInReg : entity work.Register_RE
+--    generic map (WIDTH => MAIN_WIDTH)
+--    port map (
+--        clk => clk,
+--        wr => wr,
+--        a => in1,
    
-        res => AluAInRegRes
-    );
+--        res => AluAInRegRes
+--    );
     
-    AluTOSInReg : entity work.Register_RE
-    generic map (WIDTH => MAIN_WIDTH)
-    port map (
-        clk => clk,
-        wr => wr,
-        a => AluResOutRegRes,
+--    AluTOSInReg : entity work.Register_RE
+--    generic map (WIDTH => MAIN_WIDTH)
+--    port map (
+--        clk => clk,
+--        wr => wr,
+--        a => AluResOutRegRes,
    
-        res => AluTOSInRegRes
-    );
+--        res => AluTOSInRegRes
+--    );
     
-    AluResOutReg : entity work.Register_RE
-    generic map (WIDTH => MAIN_WIDTH)
-    port map (
-        clk => clk,
-        wr => wr,
-        a => AluResOut,
+--    AluResOutReg : entity work.Register_RE
+--    generic map (WIDTH => MAIN_WIDTH)
+--    port map (
+--        clk => clk,
+--        wr => wr,
+--        a => AluResOut,
    
-        res => AluResOutRegRes
-    );
+--        res => AluResOutRegRes
+--    );
     
-    AluFlagsOutReg : entity work.Register_RE
-    generic map (WIDTH => 2)
-    port map (
-        clk => clk,
-        wr => wr,
-        a => AluFlagsResRegIn,
+--    AluFlagsOutReg : entity work.Register_RE
+--    generic map (WIDTH => 2)
+--    port map (
+--        clk => clk,
+--        wr => wr,
+--        a => AluFlagsResRegIn,
    
-        res => AluFlagsOutRegRes
-    );
+--        res => AluFlagsOutRegRes
+--    );
     
-    Alu : entity work.FullAdder
-    generic map (WIDTH => MAIN_WIDTH)
-    port map (
-        mode => mode,
-        a => in1,
-        b => AluTOSInRegRes,
+--    Alu : entity work.FullAdder
+--    generic map (WIDTH => MAIN_WIDTH)
+--    port map (
+--        mode => mode,
+--        a => in1,
+--        b => AluTOSInRegRes,
     
-        res => AluResOut,
-        ov => AluFlagsResRegIn(1),
-        zero => AluFlagsResRegIn(0)
-    );
+--        res => AluResOut,
+--        ov => AluFlagsResRegIn(1),
+--        zero => AluFlagsResRegIn(0)
+--    );
     
-    out1 <= AluResOutRegRes;
+--    out1 <= AluResOutRegRes;
 
 end Behavioral;
